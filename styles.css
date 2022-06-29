@@ -1,11 +1,38 @@
+h1{
+    text-align: center;
+}
 p{
     color: blue;
-    font-size: 100px;
+    font-size: 20px;
+    background-color: bisque;
+    text-align:right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.parrafoVerde{
+.Verde{
 color:green;
+font-size: 30px;
+background-color: beige;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
 }
 
 #parrafoPrincipal{
     color:goldenrod;
+    font-size: 50px;
+    background-color: aquamarine;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type: circle;
+    color:crimson;
+    font-size: 20px;
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+   
+   max-width: 20cm;
+   max-height: 20cm;
+   
 }
