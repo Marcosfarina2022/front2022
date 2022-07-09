@@ -1,0 +1,158 @@
+.padre {
+    background-color:azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 850px;
+    margin: 0px auto;
+}
+
+.general {
+    margin: 1% 1% 1% 1%;
+}
+p {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    font-weight:bold;
+}
+
+.padre1 {
+    background-color: rgb(173, 171, 171);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    height: 15%;
+    align-items: flex-end;
+    border: 1px solid black;
+    border-radius: 7px 7px;
+    text-align: initial;
+}
+
+.divlogo {
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    border: 1px solid black;
+    width: 25%;
+    height: 25%;
+}
+
+.divmenu1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-end;
+    width: 75%;
+    height: 100%;
+}
+
+.divmenu1A {
+    background-color: green;
+    border: 1px solid black;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-top: 2.5%;
+    margin-left: 1%;
+}
+.divmenu1B {
+    background-color: rgb(116, 7, 7);
+    border: 1px solid black;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    margin-left: 1%;
+}
+
+.padre2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 30%;
+    margin-top: 0;
+}
+
+.divIzquierda {
+    background-color: rgb(51, 47, 47);
+    border: 1px solid black;
+    display: flex;
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 7px 7px;
+    padding-left: 1%;
+}
+.divCentro {
+    background-color: rgb(11, 199, 206);
+    border: 1px solid black;
+    display: flex;
+    width: 32%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 7px 7px;
+    padding-left: 1%;
+}
+.divDerecha {
+    background-color: orangered;
+    border: 1px solid black;
+    display: flex;
+    width: 32%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 7px 7px;
+    padding-left: 1%;
+}
+
+.divIzquierda2{
+    background-color: rgb(0, 70, 0);
+    border: 1px solid black;
+    display: flex;
+    width: 66%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 7px 7px;
+    padding-left: 1%;
+}
+
+.divDerecha2 {
+    background-color: rgb(133, 36, 1);
+    border: 1px solid black;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 7px 7px;
+    display: flex;
+    width: 32%;
+    padding-left: 1%;
+}
+
+.padre3 {
+    background-color: turquoise;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    width: 98%;
+    height: 14%;
+    border: 1px solid black;
+    border-radius: 7px 7px;
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+.divElemento {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: space-around;
+    width: 25%;
+    height: 25%;
+    text-align: left;
+}
