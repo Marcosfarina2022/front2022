@@ -1,0 +1,113 @@
+body{
+    background-color:beige;
+}
+.borde{
+    border: solid black;
+}
+.general{
+    
+    margin-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    margin-bottom: 2%;
+}
+.superior{
+    height: 120px;
+    background-color:gray;
+    width: 98%;
+    border-radius: 7px 7px;
+    margin-left: 1%;
+}
+.cuerpo{
+    height: 270px;
+
+}
+.cuerpo2{
+    height: 250px;
+}
+.inferior{
+    background-color: cyan;
+    height: 110px;
+    width: 98%;
+    border-radius: 7px 7px;
+    margin-left: 1%;
+}
+.encabezado{
+    color: black;
+    margin-left: 3% ;
+}
+.logo{
+    background-color: blue;
+    justify-content: space-around;
+    align-items: left;
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 3%;
+    margin-top: 7% ;
+}
+.menu1{
+    background-color: green;
+    border: 1px solid black;
+    width: 75%;
+    margin-left: 20%;
+}
+
+.menu2{
+    background-color:brown;
+    width: 95%;
+    margin-left: 15%;
+
+}
+.izquierda{
+    background-color:darkslategray;
+    width: 97%;
+    height: 260px;
+    border-radius: 7px 7px;
+    margin-left: 3%;
+
+}
+.centro{
+    background-color:darkcyan;
+    width: 97%;
+    height: 260px;
+    border-radius: 7px 7px;
+    margin-left: 3%;
+
+}
+.derecha{
+    background-color:orange;
+    width: 94.5%;
+    height: 260px;
+    border-radius: 7px 7px;
+    margin-left: 3%;
+    
+
+}
+.izquierda1{
+    background-color:darkgreen;
+    width: 98.5%;
+    height: 230px;
+    border-radius: 7px 7px;
+    margin-left: 1.5%;
+    margin-top: 1%;
+
+}
+.derecha1{
+    background-color:chocolate;
+    width: 94.5%;
+    height: 230px;
+    border-radius: 7px 7px;
+    margin-left: 3%;
+
+}
+.pie{
+    color: black;
+    margin-left: 2% ;
+}
+.elemento{
+    background-color:blue;
+    width: 40%;
+    margin-left: 40%;
+    text-align: center;
+    margin-top: 15%;
+}
