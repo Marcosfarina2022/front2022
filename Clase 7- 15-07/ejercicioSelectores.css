@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color:green;
+}
+h2{
+    color:blueviolet;
+}
+
+div ~ h2 {   
+    background-color: orange; 
+ }
+ div + h2 {   
+    background-color: red;   
+}
+p span { 
+    color: blue; 
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: red;
+  }
+  div > p {
+    background-color: yellow;  
+} 
+ul li{
+    color:aquamarine;
+}
+
+article{
+    background-color: aqua;
+}
