@@ -1,0 +1,25 @@
+
+.borde{
+    border: solid black;
+}
+h1{
+    color: red;
+    background-color: bisque;
+    text-align: center;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+ol{
+    background-color: beige;
+    width: 30%;
+    font-size: 18px;
+}
+.lista{
+    background-color: coral;
+}
+.parrafo{
+    background-color: goldenrod;
+    
+}
