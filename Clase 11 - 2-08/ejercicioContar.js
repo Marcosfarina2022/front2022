@@ -2,13 +2,13 @@
 let contador=0;
 
 let botonSuma=document.getElementById("sumaClick");
-botonSuma=document.addEventListener("click",sumarClicks);
+botonSuma.addEventListener("click",sumarClicks);
 
 let botonResta=document.getElementById("restaClick");
-botonResta=document.addEventListener("click",restarClicks);
+botonResta.addEventListener("click",restarClicks);
 
 let botonMostrar=document.getElementById("muestraClick");
-botonMostrar=document.addEventListener("click",mostrarClicks);
+botonMostrar.addEventListener("click",mostrarClicks);
 
 
 function sumarClicks() {
