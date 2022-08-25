@@ -1,0 +1,28 @@
+p{
+    color: brown;
+}
+
+#nuevo{
+    color: red;
+}
+
+.color{
+    color:aqua;
+}
+
+p.color {
+    color:orange;
+ }
+p#nuevo{
+    color:pink; 
+}
+button:hover{
+   color: blue;
+}
+button:active { 
+    padding: 5px; 
+    background-color:aquamarine; 
+    color: red; 
+    font-weight: bold;
+  } 
+  

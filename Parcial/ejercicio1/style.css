@@ -1,0 +1,25 @@
+
+.contenedor{
+    background-color:darkseagreen;
+    height: 300px;
+    width: 65%;
+}
+.padre{
+    margin-left: 2%;
+    background-color:yellow;
+    width: 80%;
+    height: 150px;
+}
+h1, h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: blue;
+    text-align: center;
+}
+button:hover{
+    color:red;
+}
+button{
+    margin-left: 2%;
+    margin-top: 1%;
+}

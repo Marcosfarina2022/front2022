@@ -1,0 +1,143 @@
+body{
+    background-color:rgb(250,235,215);
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.padre{
+    display: flex;
+    flex-direction: row;
+}
+.pestaña1{
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.pestaña2{
+    margin-top: 2%;
+    margin-left: 15%;
+}
+.pestaña3{
+    margin-top: 2%;
+    margin-left: 15%;
+}
+.encabezado{
+    color:rgb(240,128,128);
+    margin-left: 0.5%;
+    width: 42%;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sección{
+    margin-top: 2%;
+    text-align: center;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+
+.padre1{
+    position: relative;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color:white;
+    font-weight: bolder;
+}
+.centrado{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centrado2{
+    position: absolute;
+    margin-top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+li{
+    list-style: none;
+}
+.logo{
+    margin-left: 10%;
+    width: 7%;
+}
+.pie{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color:rgb(255,160,122);
+    height: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+.formulario{
+    margin-left: 35%;
+    margin-top: 5%;
+    background-color:rgb(233,150,122);
+    width: 40%;
+    height: 300px;
+    border-radius: 7px 7px;
+}
+.etiqueta1{
+    margin-left: 2.4%;
+    margin-top: 1%;
+}
+.etiqueta2{
+    margin-left: 20.7%;
+    margin-top: 1%;
+}
+.etiqueta3{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+label{
+    margin-top: 1%;
+    margin-left: 1%;
+    color: white;
+    font-weight: bolder;
+}
+.boton{
+    margin-top: 1%;
+    margin-left: 30%;
+    background-color:rgb(255,228,196);
+}
+button:hover{
+    color:blue;
+}    
+h2{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+p{
+    text-align:center;
+}
+.pie2{
+    margin-top: 30%;
+}
+li a{
+    color:indianred;
+}
+a:active{
+    color:darkmagenta;
+}
+h3{
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+}
+.datos{
+    width: 30%;
+    height: 200px;
+    background-color:rgb(255,127,80);
+    margin-left: 3%;
+    border-radius: 7px 7px;
+}
+h4{
+    color: white;
+}

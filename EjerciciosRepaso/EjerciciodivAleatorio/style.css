@@ -1,0 +1,9 @@
+.divAleatorio{
+
+    display:flex;
+    flex-direction: column;
+    background-color: red;
+    width:fit-content;
+    margin-left: 20%;
+    text-align: center;    
+}

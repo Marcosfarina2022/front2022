@@ -1,0 +1,43 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color:burlywood;
+}
+h1{
+    text-align: center;
+}
+h1,h2{
+color: red;
+background-color: grey;
+}
+.padre{
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    background-color: beige;
+
+}
+.img1{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 60%;
+}
+.img2{
+    margin-top: 1%;
+    width: 35%;
+}
+.img3{
+    margin-top: 2%;
+    width: 30%;
+    width: 300px;
+    
+}
+.divUltimo{
+ width: 500px;   
+ text-align: center;
+ background-color: bisque;
+ align-self: center;
+}
+.bold{
+    font-weight: bolder;
+}

@@ -1,0 +1,17 @@
+.contenedor{
+    margin-top: 2%;
+    background-color: beige;
+    height: 300px ;
+}
+
+.padre{
+    margin-top: 3%;
+}
+
+.borde{
+    border:2px solid red;
+    height: 60px;
+    width: 98%;
+}
+
+

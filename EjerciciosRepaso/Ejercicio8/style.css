@@ -1,0 +1,15 @@
+.negrita{
+    font-weight: bolder;
+}
+.fondoVerde{
+    background-color: darkgreen;
+}
+.colorRojo{
+    color: red;
+}
+p{
+    color: blue;
+}
+.borde{
+    border: 1px solid black;
+}

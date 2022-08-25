@@ -1,0 +1,31 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height:350px;
+    width: 100%;
+    
+}
+.borde{
+    border: 2px solid black;
+    text-align:center;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 50%;
+    background-color:bisque;
+}
+
+.bloques{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    height: 80px;
+   
+}
+.bordeUltimo{
+    border: 2px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    background-color: azure;
+}
