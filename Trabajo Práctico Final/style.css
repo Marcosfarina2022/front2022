@@ -1,6 +1,17 @@
+/*GENERAL*/
 body{
     background-color:rgb(250,235,215);
 }
+.pie{
+    margin-top: 15%;
+    background-color:rgb(255,160,122);
+    height: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/*NAVBAR*/
+
 .contenedor{
     display: flex;
     flex-direction: column;
@@ -21,6 +32,20 @@ body{
     margin-top: 2%;
     margin-left: 15%;
 }
+
+li{
+    list-style: none;
+}
+.logo{
+    margin-left: 10%;
+    width: 7%;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+
+/*HOME*/
 .encabezado{
     color:rgb(240,128,128);
     margin-left: 0.5%;
@@ -32,48 +57,33 @@ body{
     margin-top: 2%;
     text-align: center;
 }
-img{
-    height: auto;
-    width: 100%;
+.main{
+    height: 300px;
+}
+.principalHome {
+    background-image: linear-gradient(
+        rgba(45, 42, 42, 0.45),
+        rgba(30, 28, 28, 0.45)
+      ),
+      url("https://delacosta.com.ar/images/XXX180803-WA0027_7smpq8nf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 100px 40px;
+    text-align: center;
+    color: white;
+  }
+ .principalHome p {
+    padding: 20px;
+    text-align:center;
+  }
+div h2{
+    margin-top: auto;
 }
 
-.padre1{
-    position: relative;
-}
-.texto-encima{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color:white;
-    font-weight: bolder;
-}
-.centrado{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.centrado2{
-    position: absolute;
-    margin-top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-li{
-    list-style: none;
-}
-.logo{
-    margin-left: 10%;
-    width: 7%;
-}
-.pie{
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color:rgb(255,160,122);
-    height: 50px;
-    text-align: center;
-    color: aliceblue;
-}
+/*CONTACTOS*/
+
 .formulario{
     margin-left: 35%;
     margin-top: 5%;
@@ -87,7 +97,7 @@ li{
     margin-top: 1%;
 }
 .etiqueta2{
-    margin-left: 20.7%;
+    margin-left: 20.4%;
     margin-top: 1%;
 }
 .etiqueta3{
@@ -104,6 +114,9 @@ label{
     margin-top: 1%;
     margin-left: 30%;
     background-color:rgb(255,228,196);
+    border: 3px solid #f14a16;
+    border-radius: 5px;
+    font-size: 15px;
 }
 button:hover{
     color:blue;
@@ -111,19 +124,13 @@ button:hover{
 h2{
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    
+    color: white;   
 }
-p{
-    text-align:center;
-}
-.pie2{
-    margin-top: 30%;
-}
+
 li a{
     color:indianred;
 }
-a:active{
+a:hover{
     color:darkmagenta;
 }
 h3{
@@ -141,3 +148,57 @@ h3{
 h4{
     color: white;
 }
+
+/*COMPRAS*/
+
+.sectionCompras {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+
+#listaProductos{
+    width: 45%;
+    margin: 40px auto;
+  }  
+.itemArticulo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+#titulo{
+    color: black;
+    margin-top: 1%;
+}
+#botonComprar{
+    margin-left: 50%;
+    background-color:rgb(255,228,196);
+    border: 3px solid #f14a16;
+    font-size: 15px;
+      
+}
+.itemArticulo p {
+    width: 40%;
+    font-size: 20px;
+  }
+  
+.itemArticulo input {
+    width: 15%;
+  }
+  
+.botonPrimario {
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 5px;
+    background-color: #fc9918;
+  }
+  
+  #botonComprar:hover {
+    border: 1px solid #f14a16;
+    background-color: #f14a16;
+  }

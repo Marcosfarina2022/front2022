@@ -1,5 +1,5 @@
 
-"use strict"
+"use strict";
 let total=0;
 let productoU = [];
 let precioU = [];
