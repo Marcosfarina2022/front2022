@@ -1,32 +1,17 @@
 "Use strict";
-//Pestaña Contactos//
-let boton=document.getElementById("botonEnviar");
-boton.addEventListener("click",enviarDatos);
-
-function enviarDatos() {
-let nombre;
-let email;
-let texto;
-let inputNombre=document.getElementById("inputNombre");
-nombre=inputNombre.value;
-let inputEmail=document.getElementById("inputEmail");
-email=inputEmail.value;
-
-alert("Muchas Gracias!!!!! por enviar su consulta");
-}
-//Pestaña compras//
 
 //definimos las variables y los arreglos globales//
 let total=0;
-let productos = ["Gaseosas","Fideos","Leche","Harina","Aceite","Arroz","Mermelada","Galletas"];
-let stockCantidad = [20, 30, 10, 15, 8, 12, 5, 7];
-let precioUnitario = [200, 320, 190, 85, 350, 170, 420, 245];
+let productos = ["Gaseosas","Fideos","Leche","Harina","Aceite","Arroz","Mermelada"];
+let stockCantidad = [20, 30, 10, 15, 8, 12, 5];
+let precioUnitario = [200, 320, 190, 85, 350, 170, 420];
 //Vinculamos el elemento button del html y llamamos a la función//
 const btnComprar=document.getElementById("botonComprar");
 btnComprar.addEventListener("click", comprarProductos);
 //Creamos el documento 
 const listaProd = document.getElementById("listaProductos");
 
+//Llamamos a la función
 function cargarAlCarrito(){
   for (let i = 0; i < stockCantidad.length; i++) {
     let divElementos = document.createElement("div");
@@ -50,7 +35,7 @@ function cargarAlCarrito(){
     divElementos.appendChild(cantidadItem);
     listaProd.appendChild(divElementos);
   }
-};
+}
 
 function comprarProductos(){
   for (let i = 0; i < stockCantidad.length; i++) {
@@ -58,7 +43,7 @@ function comprarProductos(){
     let cantidadElegida = Number(cantidadItem.value);
     if (cantidadElegida > 0) {
       console.log(
-        `Usted compró ${cantidadElegida} unidades de ${productos[i]}`
+        `Usted compró ${cantidadElegida} unidad/es de ${productos[i]} a un precio de ${precioUnitario[i]} pesos, por cada unidad`
       );
       total += precioUnitario[i] * cantidadElegida;
     }
@@ -68,8 +53,9 @@ function comprarProductos(){
   } else {
     console.log(`Debe seleccionar al menos un producto`);
   }
+  document.querySelector("h3").innerHTML = "El total de compra que realizó en el mercado es: $ "+`${total}`;
 };
-document.querySelector("h3").innerHTML = "Total de compra que realizó es: $ "+`${total}`;
+
 
 // window.addEventListener("load", cargarProductos);
 window.onload = cargarAlCarrito();

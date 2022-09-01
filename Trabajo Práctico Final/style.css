@@ -84,13 +84,25 @@ div h2{
 
 /*CONTACTOS*/
 
+.imagenContactos{
+    background-image:linear-gradient(
+        rgba(73, 50, 50, 0.45),
+        rgba(153, 121, 80, 0.45)
+      ),
+      url("https://delacosta.com.ar/images/cajas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .formulario{
     margin-left: 35%;
-    margin-top: 5%;
+    margin-top: 1%;
     background-color:rgb(233,150,122);
     width: 40%;
     height: 300px;
     border-radius: 7px 7px;
+    
 }
 .etiqueta1{
     margin-left: 2.4%;
@@ -155,28 +167,42 @@ h4{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: auto;
     align-items: center;
     justify-content: center;
   }
+.imagenCompras{
+    background-image: linear-gradient(
+        rgba(73, 50, 50, 0.45),
+        rgba(153, 121, 80, 0.45)
+      ),
+    url("https://lh3.googleusercontent.com/p/AF1QipObTG47ZX2NKyTKJXdrVDxvYKLWMVYGA1u9cjTH=s1600-h380");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
 
 #listaProductos{
     width: 45%;
     margin: 40px auto;
+    background-color:rgb(255,160,122);
+    color:deeppink;
+    font-weight: bolder;
   }  
 .itemArticulo {
     display: flex;
     justify-content: space-evenly;
+    margin-top: auto;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
 #titulo{
-    color: black;
+    color:white;
     margin-top: 1%;
 }
 #botonComprar{
-    margin-left: 50%;
+    margin-left: 3%;
     background-color:rgb(255,228,196);
     border: 3px solid #f14a16;
     font-size: 15px;
@@ -201,4 +227,9 @@ h4{
   #botonComprar:hover {
     border: 1px solid #f14a16;
     background-color: #f14a16;
+  }
+  #total{
+    margin-bottom: 5%;
+    color: lightsalmon;
+    margin-left: auto;
   }
