@@ -11,7 +11,7 @@ btnComprar.addEventListener("click", comprarProductos);
 //Creamos el documento 
 const listaProd = document.getElementById("listaProductos");
 
-//Llamamos a la función
+//Llamamos a la función donde cargamos los imputs y los datos
 function cargarAlCarrito(){
   for (let i = 0; i < stockCantidad.length; i++) {
     let divElementos = document.createElement("div");
@@ -36,7 +36,7 @@ function cargarAlCarrito(){
     listaProd.appendChild(divElementos);
   }
 }
-
+//Efectuamos el cálculo de la compra y realizamos la validación.
 function comprarProductos(){
   for (let i = 0; i < stockCantidad.length; i++) {
     let cantidadItem = document.getElementById(`cantidadItem-${i}`);
@@ -56,10 +56,7 @@ function comprarProductos(){
   document.querySelector("h3").innerHTML = "El total de compra que realizó en el mercado es: $ "+`${total}`;
 };
 
-
-// window.addEventListener("load", cargarProductos);
 window.onload = cargarAlCarrito();
-//btnAgregar?.addEventListener("click", agregar);
 
 
 
