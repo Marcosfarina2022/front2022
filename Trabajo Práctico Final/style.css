@@ -5,7 +5,7 @@ body{
 .pie{
     margin-top: 15%;
     background-color:rgb(255,160,122);
-    height: 50px;
+    height: 80px;
     text-align: center;
     color: aliceblue;
 }
@@ -98,18 +98,18 @@ div h2{
 .formulario{
     margin-left: 35%;
     margin-top: 1%;
-    background-color:rgb(233,150,122);
-    width: 40%;
+    background-color:rgb(240,128,128);
+    width: 65%;
     height: 300px;
     border-radius: 7px 7px;
     
 }
 .etiqueta1{
-    margin-left: 2.4%;
+    margin-left: 2.6%;
     margin-top: 1%;
 }
 .etiqueta2{
-    margin-left: 20.4%;
+    margin-left: 27.3%;
     margin-top: 1%;
 }
 .etiqueta3{
@@ -124,7 +124,7 @@ label{
 }
 .boton{
     margin-top: 1%;
-    margin-left: 30%;
+    margin-left: 50%;
     background-color:rgb(255,228,196);
     border: 3px solid #f14a16;
     border-radius: 5px;
@@ -152,8 +152,8 @@ h3{
 }
 .datos{
     width: 30%;
-    height: 200px;
-    background-color:rgb(255,127,80);
+    height: 300px;
+    background-color:rgb(139,0,139);
     margin-left: 3%;
     border-radius: 7px 7px;
 }
@@ -232,4 +232,63 @@ h4{
     margin-bottom: 5%;
     color: lightsalmon;
     margin-left: auto;
+  }
+  @media only screen and (min-width: 600px) {
+
+
+    .formulario{
+        margin-left: 35%;
+        margin-top: 1%;
+        background-color:rgb(233,150,122);
+        width: 40%;
+        height: 300px;
+        border-radius: 7px 7px;
+        
+    }
+    .etiqueta1{
+        margin-left: 2.6%;
+        margin-top: 1%;
+    }
+    .etiqueta2{
+        margin-left: 21%;
+        margin-top: 1%;
+    }
+    .etiqueta3{
+        margin-left: 1%;
+        margin-top: 1%;
+    }
+    label{
+        margin-top: 1%;
+        margin-left: 1%;
+        color: white;
+        font-weight: bolder;
+    }
+    .boton{
+        margin-top: 1%;
+        margin-left: 31%;
+        background-color:rgb(255,228,196);
+        border: 3px solid #f14a16;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .boton:hover {
+        border: 1px solid #f14a16;
+        background-color: #f14a16;
+      }
+    .datos{
+        width: 30%;
+        height: 200px;
+        background-color:rgb(255,127,80);
+        margin-left: 3%;
+        border-radius: 7px 7px;
+    }
+    .pie{
+        margin-top: 15%;
+        background-color:rgb(255,160,122);
+        height: 40px;
+        text-align: center;
+        color: aliceblue;
+    }
+
   }

@@ -41,11 +41,15 @@ function comprarProductos(){
   for (let i = 0; i < stockCantidad.length; i++) {
     let cantidadItem = document.getElementById(`cantidadItem-${i}`);
     let cantidadElegida = Number(cantidadItem.value);
-    if (cantidadElegida > 0) {
+    if (cantidadElegida > 0 && cantidadElegida <= stockCantidad[i]) {
       console.log(
         `Usted compró ${cantidadElegida} unidad/es de ${productos[i]} a un precio de ${precioUnitario[i]} pesos, por cada unidad`
       );
       total += precioUnitario[i] * cantidadElegida;
+    }
+    else {
+      console.log("La cantidad comprada supera el stock disponible");
+      
     }
   }
   if (total > 0) {
@@ -57,6 +61,3 @@ function comprarProductos(){
 };
 
 window.onload = cargarAlCarrito();
-
-
-
