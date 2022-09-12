@@ -1,4 +1,4 @@
-// funcionamiento del Microondas
+//  Ejercicio de funcionamiento de un Microondas
 var microondas = /** @class */ (function () {
     //funcionalidades
     function microondas(m, s, o) {
