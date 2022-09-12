@@ -1,4 +1,4 @@
-// funcionamiento del Microondas
+// funcionamiento de un Microondas
 
 class microondas {
     //atributos
