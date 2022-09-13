@@ -18,10 +18,22 @@ var microondas = /** @class */ (function () {
         }
     };
     microondas.prototype.programar = function () {
-        console.log("marcá la opción para calentar la comida", " ", this.opcion);
+        var readlineSync = require("readline-sync");
+        this.opcion = readlineSync.question("ingrese la opción para calentar la comida");
+        if (this.opcion == 1) {
+            console.log("La opción marcada es", " ", this.opcion);
+        }
+        else {
+            console.log("La opcion marcada es incorrecta");
+        }
     };
     microondas.prototype.calentar = function () {
-        console.log("La comida ya empezó a calentarse");
+        if (this.opcion == 1) {
+            console.log("La comida ya empezó a calentarse");
+        }
+        else {
+            console.log("La comida no se está calentando");
+        }
     };
     return microondas;
 }());
