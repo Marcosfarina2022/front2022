@@ -64,9 +64,8 @@ var rectangulo = /** @class */ (function () {
 }());
 var area = new rectangulo(70, 60);
 var area1 = new rectangulo(80, 60);
-console.log("La base del rectangulo es", area.getBase());
-console.log("La altura del rectangulo es", area.getAltura());
 console.log("El area del rectangulo es de: ", area.determinarArea());
 console.log("Segun el área calculada, la figura", area.determinarSiEsCuadrado());
 console.log("El rectángulo está", area.determinarEstadoRec());
+console.log("El area del segundo rectángulo es:", area1.determinarArea());
 console.log("El resultado de la compración es", area.compararRectangulos());
