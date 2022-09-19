@@ -1,11 +1,11 @@
 //  Ejercicio de funcionamiento de un Microondas
 
-class microondas {
+class Microondas {
     //atributos
-    prendido: boolean;
-    marca: string;
-    serie:number;
-    opcion: number;
+    private prendido: boolean;
+    private marca: string;
+    private serie:number;
+    private opcion: number;
     //funcionalidades
     constructor(m: string, s:number, o:number) {
         this.marca=m;
@@ -13,54 +13,53 @@ class microondas {
         this.prendido= false;
         this.opcion=o;   
     }
-    obtenerDatos(){
-        console.log("La marca del microondas es",this.marca,"y","su numero de serie es:", this.serie);
+    
+    public setMarca(marcaMicro : string) {
+        this.marca = marcaMicro;
+    }
+    
+    public getMarca() : string {
+        return this.marca;
     }
 
-    prender(){
-        if (this.prendido==false) {
-            console.log("Debes prender el microondas para comenzar a utilizarlo");  
-            this.prendido= true;
-            console.log("El dispositivo está prendido, el microondas está listo para utilizarlo");
-        } 
+    public setSerie(serieMicro : number) {
+        this.serie = serieMicro;
+    }
+    
+    public getSerie() : number {
+        return this.serie;
+    }
+    
+    estaPrendido(): boolean{
+        if (this.prendido==false) { 
+         this.prendido= true;
+        }
+        return this.prendido;
     }
 
-    programar(){
-        let readlineSync=require("readline-sync");
-        this.opcion= readlineSync.question("ingrese la opción para calentar la comida")
-        if (this.opcion==1) {
-            console.log("La opción marcada es"," ", this.opcion, );
-        } else {
-            console.log("La opcion marcada es incorrecta");
-        } 
+    programar():string{
+        let programa:string;
+        if (this.opcion==1 && this.prendido==true) {
+            programa="correcta";
+        }else{
+            programa="incorrecta"
+        }
+        return programa;    
     }    
-    calentar(){
+    calentar(orden: string): string{
         if (this.opcion==1) {
-            console.log("La comida ya empezó a calentarse");   
+         orden="calentar comida";   
         }
         else{
-            console.log("La comida no se está calentando");
+        orden="error";
         }
-              
+       return orden;       
     }    
 }
 
-let micro= new microondas("samsungs",37890456,1);
-micro.obtenerDatos();
-micro.prender();
-micro.programar();
-micro.calentar();
-
-// funcionalidades
-    //programar
-    //calentar comida
-    //cocinar comida
-    //Descongelar comida
-
-//Estados
-    // Prendido
-    //Apagado
-    //En reposo
-    //marca
-    //serie
-    //opcion
+let micro= new Microondas("samsungs",37890456,1);
+console.log("Marca:",micro.getMarca());
+console.log("Serie",micro.getSerie());
+console.log("¿El microondas está prendido?",micro.estaPrendido());
+console.log("opción elegida:",micro.programar());
+console.log(micro.calentar("calentar comida"));
