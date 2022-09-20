@@ -23,6 +23,9 @@ var Microondas = /** @class */ (function () {
         if (this.prendido == false) {
             this.prendido = true;
         }
+        else {
+            this.prendido = false;
+        }
         return this.prendido;
     };
     Microondas.prototype.programar = function () {
@@ -31,22 +34,22 @@ var Microondas = /** @class */ (function () {
             programa = "correcta";
         }
         else {
-            programa = "incorrecta";
+            programa = "invalida o microondas apagado";
         }
         return programa;
     };
     Microondas.prototype.calentar = function (orden) {
-        if (this.opcion == 1) {
+        if (this.opcion == 1 && this.prendido == true) {
             orden = "calentar comida";
         }
         else {
-            orden = "error";
+            orden = "no se puede calentar la comida";
         }
         return orden;
     };
     return Microondas;
 }());
-var micro = new Microondas("samsungs", 37890456, 2);
+var micro = new Microondas("samsungs", 37890456, 1);
 console.log("Marca:", micro.getMarca());
 console.log("Serie", micro.getSerie());
 console.log("¿El microondas está prendido?", micro.estaPrendido());

@@ -33,7 +33,9 @@ class Microondas {
     estaPrendido(): boolean{
         if (this.prendido==false) { 
          this.prendido= true;
-        }
+        }else{
+        this.prendido=false;
+    }
         return this.prendido;
     }
 
@@ -42,16 +44,16 @@ class Microondas {
         if (this.opcion==1 && this.prendido==true) {
             programa="correcta";
         }else{
-            programa="incorrecta"
+            programa="invalida o microondas apagado"
         }
         return programa;    
     }    
     calentar(orden: string): string{
-        if (this.opcion==1) {
+        if (this.opcion==1 && this.prendido==true) {
          orden="calentar comida";   
         }
         else{
-        orden="error";
+        orden="no se puede calentar la comida";
         }
        return orden;       
     }    
