@@ -1,8 +1,8 @@
 import { SeleccionFutbol } from "./SeleccionFutbol";
 import { Futbolista } from "./Futbolistas";
-import { Persona } from "./Persona";
 import { CuerpoMedico } from "./CuerpoMedico";
 import { CuerpoTecnico } from "./CuerpoTecnico";
+import { Persona } from './Persona';
 
 
 let fecha = new Date("06-24-1987");
@@ -66,3 +66,5 @@ seleccionA.borrarFutbolista(jugador5);
 //Consulto si fue eliminado de la lista
 let consultarjugador3: boolean = seleccionA.verificarFutbolistaEnLista(jugador5);
 console.log("El jugador",jugador5.toString(),"¿Está en la lista?",consultarjugador3);
+//Muestro quien es el técnico de la selección Argentina.
+console.log("El técnico del seleccionado argentino es",cuerpoTecnico2.get_apellido());

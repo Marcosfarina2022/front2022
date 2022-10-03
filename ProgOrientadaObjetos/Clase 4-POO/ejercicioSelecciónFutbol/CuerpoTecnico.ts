@@ -16,4 +16,5 @@ export class CuerpoTecnico extends Persona{
     public getFuncionEquipo() : string {
         return this.funcionEnEquipo; 
     }
+
 }

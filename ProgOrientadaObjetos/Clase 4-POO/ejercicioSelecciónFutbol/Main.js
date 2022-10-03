@@ -31,8 +31,9 @@ var medico3 = new CuerpoMedico_1.CuerpoMedico("Daniel", "Martinez", fecha11, 417
 var cuerpoMedicoArgentino = [medico1, medico2, medico3];
 var seleccionA = new SeleccionFutbol_1.SeleccionFutbol("Seleccion Argentina", cuerpoTecnicoArgentino, listaFutbolistas, cuerpoMedicoArgentino);
 console.log("SELECCIÓN ARGENTINA QUE VA A JUGAR EN CATAR 2022");
+//Muestro todos los integrantes de la selección de futbol
 console.log(seleccionA);
-//Verifico si el jugador está en la lista de la selección
+//Verifico si un jugador está en la lista de la selección
 var consultarJugador = seleccionA.verificarFutbolistaEnLista(jugador1);
 console.log("El jugador", jugador1.toString(), "¿Está en la lista?", consultarJugador);
 //ingreso un nuevo jugador y consulto si está en la lista
@@ -54,3 +55,4 @@ seleccionA.borrarFutbolista(jugador5);
 //Consulto si fue eliminado de la lista
 var consultarjugador3 = seleccionA.verificarFutbolistaEnLista(jugador5);
 console.log("El jugador", jugador5.toString(), "¿Está en la lista?", consultarjugador3);
+console.log("El técnico del seleccionado argentino es", cuerpoTecnico2.get_apellido());
