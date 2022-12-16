@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ascii-art": "^2.8.5",
+    "ascii-art-ansi": "^1.4.1",
+    "readline-sync": "^1.4.10",
+    "yeoman-character": "^1.1.0"
+  }
+}

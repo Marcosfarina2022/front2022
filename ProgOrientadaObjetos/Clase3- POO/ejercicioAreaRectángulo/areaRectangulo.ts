@@ -6,7 +6,7 @@ La funcionalidad de la clase debe ser:
 -     Determinar si es un cuadrado(si base y altura son iguales).
 -     Determinar si esta acostado o parado(si el alto es mas que el ancho).*/
 
-class rectangulo{
+class Rectangulo{
 private base:number;
 private altura:number;
     constructor(b:number,a:number){
@@ -31,7 +31,7 @@ public getAltura() : number {
 }
 determinarArea():number{
     let resultado: number;
-    resultado= Number(this.base)* Number(this.altura);
+    resultado= (this.base)*(this.altura);
     return resultado;
     }
 
@@ -54,11 +54,11 @@ determinarEstadoRec():string{
     return estado;
 
 }
-compararRectangulos():number{
+compararRectangulos(rectangulo1:Rectangulo, rectangulo2:Rectangulo):number{
     let valor: number;
-    if(area.determinarArea() > area1.determinarArea()){
+    if(rectangulo1.determinarArea() > rectangulo2.determinarArea()){
         valor= 1;
-    }else if (area.determinarArea()==area1.determinarArea()){
+    }else if (rectangulo1.determinarArea()==rectangulo2.determinarArea()){
         valor= 0;
     }else{
         valor= -1;
@@ -67,10 +67,10 @@ compararRectangulos():number{
 }
 }
 
-let area = new rectangulo(70,60);
-let area1 = new rectangulo(80,60);
-console.log("El area del rectangulo es de: ", area.determinarArea());
-console.log("Segun el área calculada, la figura",area.determinarSiEsCuadrado());
-console.log("El rectángulo está", area.determinarEstadoRec());
-console.log("El area del segundo rectángulo es:",area1.determinarArea());
-console.log("El resultado de la compración es", area.compararRectangulos());
+let rectangulo1 = new Rectangulo(70,60);
+let rectangulo2 = new Rectangulo(80,60);
+console.log("El area del primer rectangulo es de: ", rectangulo1.determinarArea());
+console.log("Segun el área calculada, la figura",rectangulo1.determinarSiEsCuadrado());
+console.log("El rectángulo está", rectangulo1.determinarEstadoRec());
+console.log("El area del segundo rectángulo es:",rectangulo2.determinarArea());
+console.log("El resultado de la comparación es", rectangulo1.compararRectangulos(rectangulo1, rectangulo2));

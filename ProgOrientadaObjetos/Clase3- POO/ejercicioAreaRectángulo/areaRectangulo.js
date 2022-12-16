@@ -5,29 +5,29 @@ La funcionalidad de la clase debe ser:
 -     Compararlo con otro rectangulo. Devolver 1 si es mayor, 0 son iguales y -1 si es menor.
 -     Determinar si es un cuadrado(si base y altura son iguales).
 -     Determinar si esta acostado o parado(si el alto es mas que el ancho).*/
-var rectangulo = /** @class */ (function () {
-    function rectangulo(b, a) {
+var Rectangulo = /** @class */ (function () {
+    function Rectangulo(b, a) {
         this.base = b;
         this.altura = a;
     }
-    rectangulo.prototype.setBase = function (baseRect) {
+    Rectangulo.prototype.setBase = function (baseRect) {
         this.base = baseRect;
     };
-    rectangulo.prototype.getBase = function () {
+    Rectangulo.prototype.getBase = function () {
         return this.base;
     };
-    rectangulo.prototype.setAltura = function (altRect) {
+    Rectangulo.prototype.setAltura = function (altRect) {
         this.altura = altRect;
     };
-    rectangulo.prototype.getAltura = function () {
+    Rectangulo.prototype.getAltura = function () {
         return this.altura;
     };
-    rectangulo.prototype.determinarArea = function () {
+    Rectangulo.prototype.determinarArea = function () {
         var resultado;
-        resultado = Number(this.base) * Number(this.altura);
+        resultado = (this.base) * (this.altura);
         return resultado;
     };
-    rectangulo.prototype.determinarSiEsCuadrado = function () {
+    Rectangulo.prototype.determinarSiEsCuadrado = function () {
         var figura;
         if (this.base == this.altura) {
             figura = "Es un cuadrado";
@@ -37,7 +37,7 @@ var rectangulo = /** @class */ (function () {
         }
         return figura;
     };
-    rectangulo.prototype.determinarEstadoRec = function () {
+    Rectangulo.prototype.determinarEstadoRec = function () {
         var estado;
         if (this.altura > this.base) {
             estado = "Parado";
@@ -47,12 +47,12 @@ var rectangulo = /** @class */ (function () {
         }
         return estado;
     };
-    rectangulo.prototype.compararRectangulos = function () {
+    Rectangulo.prototype.compararRectangulos = function (rectangulo1, rectangulo2) {
         var valor;
-        if (area.determinarArea() > area1.determinarArea()) {
+        if (rectangulo1.determinarArea() > rectangulo2.determinarArea()) {
             valor = 1;
         }
-        else if (area.determinarArea() == area1.determinarArea()) {
+        else if (rectangulo1.determinarArea() == rectangulo2.determinarArea()) {
             valor = 0;
         }
         else {
@@ -60,12 +60,12 @@ var rectangulo = /** @class */ (function () {
         }
         return valor;
     };
-    return rectangulo;
+    return Rectangulo;
 }());
-var area = new rectangulo(70, 60);
-var area1 = new rectangulo(80, 60);
-console.log("El area del rectangulo es de: ", area.determinarArea());
-console.log("Segun el área calculada, la figura", area.determinarSiEsCuadrado());
-console.log("El rectángulo está", area.determinarEstadoRec());
-console.log("El area del segundo rectángulo es:", area1.determinarArea());
-console.log("El resultado de la compración es", area.compararRectangulos());
+var rectangulo1 = new Rectangulo(70, 60);
+var rectangulo2 = new Rectangulo(80, 60);
+console.log("El area del primer rectangulo es de: ", rectangulo1.determinarArea());
+console.log("Segun el área calculada, la figura", rectangulo1.determinarSiEsCuadrado());
+console.log("El rectángulo está", rectangulo1.determinarEstadoRec());
+console.log("El area del segundo rectángulo es:", rectangulo2.determinarArea());
+console.log("El resultado de la comparación es", rectangulo1.compararRectangulos(rectangulo1, rectangulo2));
